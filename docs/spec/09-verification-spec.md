@@ -33,8 +33,8 @@ listing or direct `uv run` output.
    as its corresponding tool.
 4. **Guide resource:** Read `arale://procedure/guide`; MIME is
    `application/yaml`. Parse its YAML and confirm `meta.id: GUIDE`,
-   `meta.version: '1.6'`, `meta.kind: control_guide`, and top-level `boot`,
-   `router` and `protocol`. This is the Guide 1.6 resource shape; it does not
+   `meta.version: '1.7'`, `meta.kind: control_guide`, and top-level `boot`,
+   `router` and `protocol`. This is the Guide 1.7 resource shape; it does not
    have the old top-level `id`, `phases` and `routing_table` fields.
 5. **Prompt:** Render `apply_instruction` with
    `{"id":"testing","task":"Review the current test plan"}`. Expect one
@@ -51,6 +51,6 @@ state and fix or diagnose it before claiming a connected installation.
 Before a documentation-alignment commit, run `git diff --check` and the four
 quality gates in `AGENTS.md`. In the clean distribution, build a fresh offline
 wheel and compare its 21 procedure YAML and four instruction Markdown bytes
-against `docs/plan/consumer-harness-evidence/guide-entry-v16-assets.json`.
+against `docs/plan/consumer-harness-evidence/guide-entry-v17-assets.json`.
 These local checks prove package integrity; they do not replace the post-restart
 client checks. Review the commit and confirm its Git tree is clean.

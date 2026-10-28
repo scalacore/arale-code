@@ -34,7 +34,7 @@ deployment or release.
 - `src/arale_code/__init__.py`, `__main__.py`, `catalog.py`,
   `procedures.py`, `server.py`: package and read-only STDIO MCP server.
 - `src/arale_code/instructions/*.md`: four bundled engineering instructions.
-- `src/arale_code/procedures/*.yaml`: Guide 1.6 and P01 through P20, 21
+- `src/arale_code/procedures/*.yaml`: Guide 1.7 and P01 through P20, 21
   immutable procedure resources. No runtime manifest or transport state is
   stored in these directories.
 - `tests/test_catalog.py`, `test_data_integrity.py`, `test_server.py`,
@@ -49,7 +49,7 @@ deployment or release.
   and implementation record. The final installation alignment plan remains
   only in the original workspace.
 - `docs/plan/consumer-harness-evidence/`: the selected compact review records
-  and Guide 1.6 asset pin included in this distribution. This directory is
+  historical Guide 1.6 pin and current `guide-entry-v17-assets.json` pin. This directory is
   historical evidence, not a self-contained raw trial archive or a release
   approval.
 - `docs/assets/guide-to-procedures.webp`: original README mascot holding a
@@ -58,7 +58,7 @@ deployment or release.
   on 2026-10-27, without a reference image, then resized and encoded as WebP.
 
 The 25 bundled source assets must retain the bytes pinned by
-`docs/plan/consumer-harness-evidence/guide-entry-v16-assets.json`. A fresh
+`docs/plan/consumer-harness-evidence/guide-entry-v17-assets.json`. A fresh
 offline wheel check validates the packaged copy. Client registration and live
 MCP discovery are separate steps under `INSTALL.md` and
 `docs/spec/09-verification-spec.md`.

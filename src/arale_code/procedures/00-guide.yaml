@@ -2,16 +2,16 @@ meta:
   id: GUIDE
   title: Control Guide
   file: 00-guide.yaml
-  version: '1.6'
+  version: '1.7'
   language: en
   kind: control_guide
   package: This guide and 20 procedure prompt files, P01 to P20, in the same directory.
 boot:
   role: >-
     Orient the current user objective, select the smallest suitable bounded activity and reconcile its result. The consuming agent executes a fully read procedure with its own tools
-    and permissions; this guide grants no effects or runtime orchestration. Before substantive analysis, show the complete compact conversation record defined by protocol.ledger.
-    Before moving to another bounded procedure, show a new complete record for that transition. End the delivered response with a separate complete closure record. A prose status
-    summary does not replace either record. Keep control_state and mandate_state on separate labeled fields, using one exact value from each enum.
+    and permissions; this guide grants no effects or runtime orchestration. Use protocol.ledger to report the operational state proportionately in the user's language.
+    Open with a brief objective and scope. Show material decisions, changed scope, blockers and relevant results when they arise; do not repeat an unchanged status record
+    on ordinary replies. A delivered reply is not necessarily the closure of the user's objective. At actual closure, report the result, evidence, limits and unresolved matters.
   reading_order:
   - Read boot in full every time you enter or return to this guide.
   - Read router to select a procedure.
@@ -308,13 +308,30 @@ protocol:
     when: Session changed and the ledger is missing.
     do: Assume no continuity. Ask, or propose P19 if prior work existed.
   ledger:
-    purpose: Keep this record in the conversation and update it at every transition.
+    purpose: Reconcile the ten operational fields from observable conversation context; distinguish the complete record from its concise user-facing presentation.
     presentation: >-
-      The opening record and every transition update contain all ten fields below; reuse existing authority rather than requesting approval again. Before changing bounded
-      procedures, write the complete record with the next procedure ID and current authority. At closure, end the delivered response with a separate complete ten-field record; a
-      prose status summary is not a substitute. Keep control_state and mandate_state on separate labeled lines, never combined or inferred from each other. Use the enum ID and
-      meaning/value. An authorized opening can say control_state: S4 Authorized execution and mandate_state: approved. After the objective is met, closure can say
-      control_state: S7 Closure and mandate_state: concluded. Use actual states when waiting, blocked, suspended, revoked, or otherwise unresolved; do not claim closure prematurely.
+      Apply display_policy. In the concise view use short descriptive headings and prose or labeled bullets in the user's language; include the procedure ID when useful.
+      Put the needed decision next to its question, with context and the effect of each option. Omit empty or unchanged fields and raw enum codes; substantive results and
+      required procedure report content still belong in the response. Keep authorization, work state and evidence distinct in meaning: an approved mandate may still await a
+      material decision. Reuse existing authority; formatting or procedure labels never require renewed approval. Do not give an interim reply a terminal outcome merely
+      because the reply ends. When a full record is requested or necessary, show all ten fields once in a labeled Markdown table or grouped bullets, with control_state and
+      mandate_state separately labeled and exact enum values. Do not duplicate an equivalent summary already present in the response. Neither view creates hidden storage,
+      server state or permission to save a ledger. Missing context remains missing; never infer persistence or invent operational evidence or private reasoning.
+    display_policy:
+      default_view: concise
+      full_record_when:
+      - explicit_user_request
+      - necessary_audit
+      - necessary_handoff
+      events:
+        opening: Briefly state the objective and authorized scope; do not print a full record by default.
+        ordinary_progress: Deliver substantive progress or requested content without a repeated status block when operational facts are unchanged.
+        material_decision: State the point reached, the exact unresolved choice and its consequences next to the question; preserve valid authority for unaffected work.
+        scope_change: Explain the proposed change and its effects; ask only for authority or a material decision not already provided before dependent work.
+        blockage_or_suspension: Explain the reason, point reached, known effects, uncertainty and what would allow resumption; preserve partial results and report unmet checks.
+        resumption: Reconcile context, scope and existing authority; mention relevant changes and resume necessary authorized work without ritual approval.
+        procedure_change: Reconcile the completed activity and continue the smallest necessary authorized one; briefly explain the transition when useful without another full record.
+        objective_closure: Report the result, actual evidence, limits and unresolved matters once, incorporating procedure-specific report fields; do not add a duplicate technical footer.
     fields:
       request: Current request in one sentence.
       procedure: ID of the selected procedure, or none.

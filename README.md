@@ -24,7 +24,7 @@ It returns a JSON string whose first entry is the Guide (excerpt; the full `docu
 {"schema_version":1,"documents":[{"id":"guide","code":"GUIDE","title":"Control Guide","kind":"guide","uri":"arale://procedure/guide"}]}
 ```
 
-Read that URI as an MCP resource to get the YAML Guide. Its `meta.id` is `GUIDE` and its `meta.version` is `'1.6'`. The example shows catalog discovery; it does not cause the server to edit a project.
+Read that URI as an MCP resource to get the YAML Guide. Its `meta.id` is `GUIDE` and its `meta.version` is `'1.7'`. The example shows catalog discovery; it does not cause the server to edit a project.
 
 ## Get started
 
@@ -51,7 +51,7 @@ The bundled documents are four Markdown instructions, one YAML Guide and 20 YAML
 
 The server is read-only and stateless. It serves bundled guidance over local STDIO; it does not execute procedures, grant permissions or make outbound network requests. The consuming agent remains responsible for any project changes.
 
-Repository tests and an isolated local STDIO package check have verified the bundled interface and Guide 1.6 assets. The five client paths in [INSTALL.md](INSTALL.md) are documented installation paths; live discovery in each client has not been verified here. See the [verification contract](docs/spec/09-verification-spec.md) for the checks required after client registration.
+Repository tests and an isolated local STDIO package check have verified the bundled interface and Guide 1.7 assets. The five client paths in [INSTALL.md](INSTALL.md) are documented installation paths; live discovery in each client has not been verified here. See the [verification contract](docs/spec/09-verification-spec.md) for the checks required after client registration.
 
 ## Develop and contribute
 
