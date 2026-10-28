@@ -142,7 +142,7 @@ client restarts, use that client's live MCP connection to:
 2. Call `list_procedures`; parse its JSON string and confirm
    `schema_version: 1` and exactly 21 entries under `documents`.
 3. Read `arale://procedure/guide`; confirm MIME `application/yaml`, parse its
-   YAML, and check `meta.id: GUIDE` and `meta.version: '1.6'`.
+   YAML, and check `meta.id: GUIDE` and `meta.version: '1.7'`.
 4. Render `apply_instruction` with `id: testing` and a nonempty `task`, such
    as `Review the current test plan`; confirm it includes the testing text.
 5. Check `git status --short` in `<REPO_ROOT>` for unexpected changes.

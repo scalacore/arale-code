@@ -1,0 +1,209 @@
+{
+  "purpose": "Guide 1.7 reporting presentation: selected working-tree asset bytes",
+  "source_base_commit": "f503349171eb62b3b3acb392b25355c80f17b048",
+  "source_state": "Uncommitted working tree; per-file hashes identify the assets",
+  "asset_set_sha256": "18dbd1f0b77bee7dc06126885cfd9c45c083f6f275b07fb96260f1e36bde1f5e",
+  "previous_pin": "docs/plan/consumer-harness-evidence/guide-entry-v16-assets.json",
+  "procedure_asset_count": 21,
+  "instruction_asset_count": 4,
+  "procedure_assets": [
+    {
+      "id": "P00",
+      "file": "src/arale_code/procedures/00-guide.yaml",
+      "public_id": "guide",
+      "uri": "arale://procedure/guide",
+      "bytes": 21065,
+      "sha256": "c015d5b409fdd06b8ae4b05e07d012cce99150cc9b780b60fa4591e09afe344a"
+    },
+    {
+      "id": "P01",
+      "file": "src/arale_code/procedures/01-project-reconnaissance.yaml",
+      "public_id": "p01-project-reconnaissance",
+      "uri": "arale://procedure/p01-project-reconnaissance",
+      "bytes": 13745,
+      "sha256": "39578c467c53ca1fb3d5def8783d5ee658e99491973ded4796f21ee92bd23dbe"
+    },
+    {
+      "id": "P02",
+      "file": "src/arale_code/procedures/02-initial-state-baseline.yaml",
+      "public_id": "p02-initial-state-baseline",
+      "uri": "arale://procedure/p02-initial-state-baseline",
+      "bytes": 15142,
+      "sha256": "4ad903e82857f31a821e19ab7ab63a1a60122c777e4b8024a0bc54da0585119e"
+    },
+    {
+      "id": "P03",
+      "file": "src/arale_code/procedures/03-environment-diagnosis.yaml",
+      "public_id": "p03-environment-diagnosis",
+      "uri": "arale://procedure/p03-environment-diagnosis",
+      "bytes": 14034,
+      "sha256": "c219ff055e1b2dd357273f208e05dce819fd844a5915e346c55ed9d3d98e5993"
+    },
+    {
+      "id": "P04",
+      "file": "src/arale_code/procedures/04-mandate-clarification.yaml",
+      "public_id": "p04-mandate-clarification",
+      "uri": "arale://procedure/p04-mandate-clarification",
+      "bytes": 12555,
+      "sha256": "02721613e5ab5ca27314d8193c47d88473af2cefc87865be42c5548bd4e71fa2"
+    },
+    {
+      "id": "P05",
+      "file": "src/arale_code/procedures/05-behavior-specification.yaml",
+      "public_id": "p05-behavior-specification",
+      "uri": "arale://procedure/p05-behavior-specification",
+      "bytes": 12766,
+      "sha256": "6c2be0baa50fa364e4386f4bbd0cce7f195afedd9991235201329aa722824a23"
+    },
+    {
+      "id": "P06",
+      "file": "src/arale_code/procedures/06-interaction-design.yaml",
+      "public_id": "p06-interaction-design",
+      "uri": "arale://procedure/p06-interaction-design",
+      "bytes": 13777,
+      "sha256": "34517667d196843f10ff5fd3533de391551d1434d9e170d7fa47b0c2612edfbd"
+    },
+    {
+      "id": "P07",
+      "file": "src/arale_code/procedures/07-technical-design.yaml",
+      "public_id": "p07-technical-design",
+      "uri": "arale://procedure/p07-technical-design",
+      "bytes": 14049,
+      "sha256": "eb6c9c21734cb5eec6ae6e615e009965256719fd7817293c85b1466c582402cb"
+    },
+    {
+      "id": "P08",
+      "file": "src/arale_code/procedures/08-contracts-compatibility.yaml",
+      "public_id": "p08-contracts-compatibility",
+      "uri": "arale://procedure/p08-contracts-compatibility",
+      "bytes": 16566,
+      "sha256": "0f332cdc28e13d41dace4625916fe1ad6e95cacba46ce445c61f6d6f410465f1"
+    },
+    {
+      "id": "P09",
+      "file": "src/arale_code/procedures/09-plan-tasks-dependencies.yaml",
+      "public_id": "p09-plan-tasks-dependencies",
+      "uri": "arale://procedure/p09-plan-tasks-dependencies",
+      "bytes": 14650,
+      "sha256": "451ef6639fb3b801c70a993acc61af1a1317490cddceeed0a667624d1c194847"
+    },
+    {
+      "id": "P10",
+      "file": "src/arale_code/procedures/10-coherence-coverage.yaml",
+      "public_id": "p10-coherence-coverage",
+      "uri": "arale://procedure/p10-coherence-coverage",
+      "bytes": 14364,
+      "sha256": "7393c5abc044c5dfd6e9f8eddf0d7b870b5ca9977e326826b0517a5e247fada5"
+    },
+    {
+      "id": "P11",
+      "file": "src/arale_code/procedures/11-malfunction-diagnosis.yaml",
+      "public_id": "p11-malfunction-diagnosis",
+      "uri": "arale://procedure/p11-malfunction-diagnosis",
+      "bytes": 15603,
+      "sha256": "0bc02f6814cb973fd2311284042ae9e8b24eb091823fe93e61ed6d2f94d52f14"
+    },
+    {
+      "id": "P12",
+      "file": "src/arale_code/procedures/12-task-execution.yaml",
+      "public_id": "p12-task-execution",
+      "uri": "arale://procedure/p12-task-execution",
+      "bytes": 16629,
+      "sha256": "6d962b4966689a1564cd064bbed5d21e3e38bd36cd63f41754903015c731a924"
+    },
+    {
+      "id": "P13",
+      "file": "src/arale_code/procedures/13-controlled-refactoring.yaml",
+      "public_id": "p13-controlled-refactoring",
+      "uri": "arale://procedure/p13-controlled-refactoring",
+      "bytes": 14188,
+      "sha256": "27ca3a90483c5dfbd789a4d65a29637d46f32d35e3dc7ec32083c35d37aeb5dd"
+    },
+    {
+      "id": "P14",
+      "file": "src/arale_code/procedures/14-performance-optimization.yaml",
+      "public_id": "p14-performance-optimization",
+      "uri": "arale://procedure/p14-performance-optimization",
+      "bytes": 14512,
+      "sha256": "7c4efd6e5f8050993cd8fdb5316656bae4501cbaaf1afde59de0e52a99cd6913"
+    },
+    {
+      "id": "P15",
+      "file": "src/arale_code/procedures/15-testing-verification.yaml",
+      "public_id": "p15-testing-verification",
+      "uri": "arale://procedure/p15-testing-verification",
+      "bytes": 15329,
+      "sha256": "fbd12038b9c713d55b0f34c1a18018c8ce579564e1aae1c1d8f500268ed6e63c"
+    },
+    {
+      "id": "P16",
+      "file": "src/arale_code/procedures/16-change-review.yaml",
+      "public_id": "p16-change-review",
+      "uri": "arale://procedure/p16-change-review",
+      "bytes": 13513,
+      "sha256": "a3920e47dc29a90339010419cda63050a0507ded3ac253277a701477a2f06b12"
+    },
+    {
+      "id": "P17",
+      "file": "src/arale_code/procedures/17-security-data-integrity.yaml",
+      "public_id": "p17-security-data-integrity",
+      "uri": "arale://procedure/p17-security-data-integrity",
+      "bytes": 13932,
+      "sha256": "a7bb9402f0011dddb24b6b9cb984cf4c7c9d86bfc365a4351f087a7bb5ed67cb"
+    },
+    {
+      "id": "P18",
+      "file": "src/arale_code/procedures/18-integration-migrations.yaml",
+      "public_id": "p18-integration-migrations",
+      "uri": "arale://procedure/p18-integration-migrations",
+      "bytes": 15489,
+      "sha256": "ebf7a86c5767cbefa02aa86dce9505846acc29fafe771aa0abe00f85f9279625"
+    },
+    {
+      "id": "P19",
+      "file": "src/arale_code/procedures/19-state-recovery-replanning.yaml",
+      "public_id": "p19-state-recovery-replanning",
+      "uri": "arale://procedure/p19-state-recovery-replanning",
+      "bytes": 15796,
+      "sha256": "771486f74d2c6252a01b8d53a04e073dee1b6d659cfa153fd4181f1d1194cf91"
+    },
+    {
+      "id": "P20",
+      "file": "src/arale_code/procedures/20-acceptance-delivery.yaml",
+      "public_id": "p20-acceptance-delivery",
+      "uri": "arale://procedure/p20-acceptance-delivery",
+      "bytes": 15147,
+      "sha256": "deb9abc4a0de1cb47cc8fd59345289279dc82f9b9a4081fdfe7cc77ef4d06d87"
+    }
+  ],
+  "instruction_assets": [
+    {
+      "id": "design-spec",
+      "file": "src/arale_code/instructions/design-spec.md",
+      "uri": "instructions://document/design-spec",
+      "bytes": 1208,
+      "sha256": "bc148c542e17290cdd26329ee93f5f461cc4b6d0863122faf5620b4382ebef3b"
+    },
+    {
+      "id": "implementation-plan",
+      "file": "src/arale_code/instructions/implementation-plan.md",
+      "uri": "instructions://document/implementation-plan",
+      "bytes": 772,
+      "sha256": "be9bc5bb969eb50ce4e5da37a3a4bd2675cca793e4e66eef49218c116c417245"
+    },
+    {
+      "id": "code-quality",
+      "file": "src/arale_code/instructions/code-quality.md",
+      "uri": "instructions://document/code-quality",
+      "bytes": 973,
+      "sha256": "ac2de6053253c7f056fa603a363b348c051fd7a8c015d7268e6b9b0f3abc842c"
+    },
+    {
+      "id": "testing",
+      "file": "src/arale_code/instructions/testing.md",
+      "uri": "instructions://document/testing",
+      "bytes": 894,
+      "sha256": "1113eb2ad6142750c508f1cf4d3d7eee73eed6e6c425a652e83ffd26d1edc927"
+    }
+  ]
+}

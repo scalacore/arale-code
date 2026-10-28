@@ -1,6 +1,6 @@
 # Quality Gates and Test Verification
 
-This inventory describes the implemented tests through the Guide 1.6 revision (2026-10-27). Historical
+This inventory describes the implemented tests through the Guide 1.7 revision (2026-10-28). Historical
 module names and index manifests are not implemented checks.
 
 ## 1. Required quality gates
@@ -41,7 +41,7 @@ scanning and push protection provide the repository's hosted secret checks.
 Catalog definitions are in Python, not `index.yaml`. Alias examples do not
 prove that every possible alias or YAML metadata field was checked.
 
-### 2.2 `tests/test_data_integrity.py` (39 test instances)
+### 2.2 `tests/test_data_integrity.py` (40 test instances)
 
 - `test_file_counts`: exactly 21 procedure YAML and four instruction Markdown files.
 - `test_procedure_yaml_integrity`: existence, exact byte size, 65,536-byte ceiling
@@ -56,7 +56,8 @@ prove that every possible alias or YAML metadata field was checked.
 - `test_p05_preserves_source_actor_scope_for_repeated_requests` and
   `test_p10_checks_combined_predicate_coverage`: focused guidance checks.
 - `test_guide_route_and_record_structure`: Guide routing and ten-field record structure.
-- `test_guide_entry_is_concise_version_16`: Guide version, size and removed duplicate catalog.
+- `test_guide_reporting_policy`: concise default, full-record triggers and reporting events.
+- `test_guide_entry_is_concise_version_17`: Guide version, size and removed duplicate catalog.
 
 The expected hashes are reviewed current expectations. Historical content 1.0
 hashes remain in section 3 of `04-rename-map.md`. Hash equality demonstrates
@@ -91,10 +92,11 @@ installation, immutable runtime internals or field-level YAML semantics.
 
 - `test_server_stdio_subprocess`: launches `uv run arale-code` locally, discovers
   tool names and calls procedure discovery with count/schema assertions inside
-  a 20-second timeout. It does not assert independent shutdown, server-name,
+  a 20-second timeout. It also reads the actual Guide resource and checks version
+  1.7 and its concise default. It does not assert independent shutdown, server-name,
   every URI read or cross-platform behavior.
 
-The observed suite contains 55 tests. A01 and revision results are in
+The observed suite contains 56 tests. A01 and revision results are in
 `docs/plan/rettifiche-21.yaml`; later changes may alter the inventory/count.
 
 ## 3. Editorial revision and completion evidence

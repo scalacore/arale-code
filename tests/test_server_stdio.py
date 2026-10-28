@@ -4,6 +4,7 @@ import json
 
 import anyio
 import pytest
+import yaml
 from fastmcp.client import Client
 from fastmcp.client.transports import StdioTransport
 
@@ -27,3 +28,9 @@ async def test_server_stdio_subprocess() -> None:
             data = json.loads(res.data)
             assert data["schema_version"] == 1
             assert len(data["documents"]) == 21
+
+            guide = await client.read_resource("arale://procedure/guide")
+            assert guide[0].mime_type == "application/yaml"
+            content = yaml.safe_load(guide[0].text)
+            assert content["meta"]["version"] == "1.7"
+            assert content["protocol"]["ledger"]["display_policy"]["default_view"] == "concise"

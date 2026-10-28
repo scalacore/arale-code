@@ -19,8 +19,8 @@ MAX_FILE_SIZE_BYTES = 65536
 
 PROCEDURE_EXPECTED_HASHES: dict[str, tuple[int, str]] = {
     "00-guide.yaml": (
-        19209,
-        "69825372a8f32dbe9c92c9a155aabc2a3934c43e263cc869916bd68087ccae2e",
+        21065,
+        "c015d5b409fdd06b8ae4b05e07d012cce99150cc9b780b60fa4591e09afe344a",
     ),
     "01-project-reconnaissance.yaml": (
         13745,
@@ -178,7 +178,7 @@ def _validate_procedure_asset(raw: bytes, file_name: str) -> dict[str, Any]:
     }
     if any(meta.get(key) != value for key, value in expected.items()):
         raise ValueError("Procedure metadata differs from the public catalog")
-    if meta.get("version") not in {"1.0", "1.1", "1.2", "1.3", "1.4", "1.5", "1.6"}:
+    if meta.get("version") not in {"1.0", "1.1", "1.2", "1.3", "1.4", "1.5", "1.6", "1.7"}:
         raise ValueError("Unsupported content version")
     sections = (
         ("boot", "router", "protocol")
@@ -287,10 +287,32 @@ def test_guide_route_and_record_structure() -> None:
     ]
 
 
-def test_guide_entry_is_concise_version_16() -> None:
+def test_guide_reporting_policy() -> None:
+    guide = _load_procedure_yaml(_decode_asset((PROCEDURES_DIR / "00-guide.yaml").read_bytes()))
+    policy = guide["protocol"]["ledger"]["display_policy"]
+    assert policy["default_view"] == "concise"
+    assert policy["full_record_when"] == [
+        "explicit_user_request",
+        "necessary_audit",
+        "necessary_handoff",
+    ]
+    assert set(policy["events"]) == {
+        "opening",
+        "ordinary_progress",
+        "material_decision",
+        "scope_change",
+        "blockage_or_suspension",
+        "resumption",
+        "procedure_change",
+        "objective_closure",
+    }
+    assert all(isinstance(rule, str) and rule.strip() for rule in policy["events"].values())
+
+
+def test_guide_entry_is_concise_version_17() -> None:
     raw = (PROCEDURES_DIR / "00-guide.yaml").read_bytes()
     guide = _load_procedure_yaml(_decode_asset(raw))
-    assert guide["meta"]["version"] == "1.6"
+    assert guide["meta"]["version"] == "1.7"
     assert "catalog" not in guide["router"]
     assert len(raw) <= 24 * 1024
 
