@@ -1,0 +1,55 @@
+[project]
+name = "arale-code"
+version = "0.1.0"
+description = "Read-only engineering instructions for MCP-compatible coding agents."
+readme = "README.md"
+license = "Apache-2.0"
+license-files = ["LICENSE", "NOTICE"]
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "fastmcp>=4.1.2,<4.2",
+    "PyYAML>=6.0,<7",
+]
+
+[project.scripts]
+arale-code = "arale_code.server:main"
+
+[dependency-groups]
+dev = [
+    "mypy>=1.18,<2",
+    "pytest>=9.0.3,<10",
+    "pytest-asyncio>=0.24,<2",
+    "ruff>=0.14,<0.15",
+]
+
+[build-system]
+requires = ["uv_build>=0.11.12,<0.12.0"]
+build-backend = "uv_build"
+
+[tool.uv]
+constraint-dependencies = ["authlib>=1.9.1"]
+
+[tool.pytest.ini_options]
+addopts = ["--import-mode=importlib", "-ra"]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+
+[tool.ruff]
+target-version = "py312"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+files = ["src", "tests"]
+
+[[tool.mypy.overrides]]
+module = "yaml.*"
+ignore_missing_imports = true
+
+[[tool.mypy.overrides]]
+module = "yaml"
+ignore_missing_imports = true

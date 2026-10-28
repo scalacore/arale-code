@@ -1,0 +1,585 @@
+{
+  "status": "ACCEPTED",
+  "recorded_at": "2026-10-25T17:26:48.470751+00:00",
+  "scope": "P2 consumer boundary acceptance for five selected profiles and their fixed permission contracts",
+  "profiles": [
+    "C02",
+    "C05",
+    "C18",
+    "C26",
+    "C27"
+  ],
+  "reviewer": "Integrated independent read-only subagent p2_final_review; primary agent also reran the retained-evidence validators",
+  "decision": "No acceptance blocker remains within the five-profile boundary scope. Actual case trials remain separately gated.",
+  "requirements": {
+    "current_positive_preflights": [
+      {
+        "case": "C02",
+        "path": "docs/plan/consumer-harness-evidence/luna-native-0xk9amhy/run.json",
+        "sha256": "b49e17e06bef4b6a3d96c71af8ca02a0a62ef0b6919eadaff23bff4f9383fceb",
+        "status": "PREFLIGHT_PASS",
+        "current_validate_proof": "PASS_WITHOUT_SUBSTITUTION",
+        "requests": 4,
+        "provider_dispatches": 0,
+        "case_trials": 0,
+        "native_sha256": "d8990e3ee7acfbc26f91265b12a1a83f0fee40d0e0f8f1f40a37d4ec21f499cf",
+        "effect_preflight": null
+      },
+      {
+        "case": "C05",
+        "path": "docs/plan/consumer-harness-evidence/luna-native-8e7xlx72/run.json",
+        "sha256": "b388b51129ae6ad61f8c66a7870ad3f672a3c8f58126d6439be7ac9bd4f6ef04",
+        "status": "PREFLIGHT_PASS",
+        "current_validate_proof": "PASS_WITHOUT_SUBSTITUTION",
+        "requests": 4,
+        "provider_dispatches": 0,
+        "case_trials": 0,
+        "native_sha256": "d8990e3ee7acfbc26f91265b12a1a83f0fee40d0e0f8f1f40a37d4ec21f499cf",
+        "effect_preflight": null
+      },
+      {
+        "case": "C18",
+        "path": "docs/plan/consumer-harness-evidence/luna-native-slciknh7/run.json",
+        "sha256": "d0ea8c6c9184e745c7d773402822b9950716b7d0c55304d546d172a0da4cda34",
+        "status": "PREFLIGHT_PASS",
+        "current_validate_proof": "PASS_WITHOUT_SUBSTITUTION",
+        "requests": 4,
+        "provider_dispatches": 0,
+        "case_trials": 0,
+        "native_sha256": "d8990e3ee7acfbc26f91265b12a1a83f0fee40d0e0f8f1f40a37d4ec21f499cf",
+        "effect_preflight": null
+      },
+      {
+        "case": "C26",
+        "path": "docs/plan/consumer-harness-evidence/luna-native-vsyrlvw8/run.json",
+        "sha256": "1353edc2d3b0cf1385394421120a53dede1f892949ee6df5f510a90a9d8b1801",
+        "status": "PREFLIGHT_PASS",
+        "current_validate_proof": "PASS_WITHOUT_SUBSTITUTION",
+        "requests": 8,
+        "provider_dispatches": 0,
+        "case_trials": 0,
+        "native_sha256": "d8990e3ee7acfbc26f91265b12a1a83f0fee40d0e0f8f1f40a37d4ec21f499cf",
+        "effect_preflight": {
+          "status": "PASS",
+          "scope": "synthetic read/write/restore/check, original baseline outcome; no task trial"
+        }
+      },
+      {
+        "case": "C27",
+        "path": "docs/plan/consumer-harness-evidence/luna-native-7i0trjbh/run.json",
+        "sha256": "01a24647749cb5fe9add6de389615d08a042211b4b324eeebbbbc430bc2b96d1",
+        "status": "PREFLIGHT_PASS",
+        "current_validate_proof": "PASS_WITHOUT_SUBSTITUTION",
+        "requests": 8,
+        "provider_dispatches": 0,
+        "case_trials": 0,
+        "native_sha256": "d8990e3ee7acfbc26f91265b12a1a83f0fee40d0e0f8f1f40a37d4ec21f499cf",
+        "effect_preflight": {
+          "status": "PASS",
+          "scope": "synthetic read/write/restore/check, original baseline outcome; no task trial"
+        }
+      }
+    ],
+    "selected_tool_boundary_pairs": [
+      {
+        "case": "C02",
+        "check": "resource",
+        "path": "docs/plan/consumer-harness-evidence/c02-native-denials-p7gl73s5/run.json",
+        "sha256": "92cf76875d64fb8b22d614fb63e7d54ace079a1d0ec83fb9366db831a722395d",
+        "raw_status": "PASS_LIMITED_NATIVE_TOOL_DENIAL",
+        "derived_attestation": {
+          "status": "PASS_LIMITED_NATIVE_TOOL_DENIAL",
+          "native_turn_status": "completed",
+          "negative_checks": 1,
+          "provider_dispatches": 0,
+          "case_trials": 0
+        }
+      },
+      {
+        "case": "C02",
+        "check": "read",
+        "path": "docs/plan/consumer-harness-evidence/c02-native-denials-067p9i7b/run.json",
+        "sha256": "907bcdce959064ad475b6f84dbe7d5e9680c75d315c3ba01bca15a8a6d106395",
+        "raw_status": "FAIL",
+        "derived_attestation": {
+          "status": "PASS_LIMITED_NATIVE_UNAVAILABLE_TOOL_REFUSAL_CLEAN_TURN",
+          "native_turn_status": "completed",
+          "negative_checks": 1,
+          "provider_dispatches": 0,
+          "case_trials": 0
+        }
+      },
+      {
+        "case": "C02",
+        "check": "write",
+        "path": "docs/plan/consumer-harness-evidence/c02-native-denials-fkxna5bp/run.json",
+        "sha256": "335ffca20bcfbc998077e58abc87e2ee1891be90066a0687189ff1a6d2d778b9",
+        "raw_status": "PASS_LIMITED_NATIVE_UNAVAILABLE_TOOL_REFUSAL_CLEAN_TURN",
+        "derived_attestation": {
+          "status": "PASS_LIMITED_NATIVE_UNAVAILABLE_TOOL_REFUSAL_CLEAN_TURN",
+          "native_turn_status": "completed",
+          "negative_checks": 1,
+          "provider_dispatches": 0,
+          "case_trials": 0
+        }
+      },
+      {
+        "case": "C02",
+        "check": "command",
+        "path": "docs/plan/consumer-harness-evidence/c02-native-denials-7hkfbsck/run.json",
+        "sha256": "0ae9fa92bf76ac63f82424d80fb47394761937c776b6ad3a625b661de2daf919",
+        "raw_status": "PASS_LIMITED_NATIVE_UNAVAILABLE_TOOL_REFUSAL_CLEAN_TURN",
+        "derived_attestation": {
+          "status": "PASS_LIMITED_NATIVE_UNAVAILABLE_TOOL_REFUSAL_CLEAN_TURN",
+          "native_turn_status": "completed",
+          "negative_checks": 1,
+          "provider_dispatches": 0,
+          "case_trials": 0
+        }
+      },
+      {
+        "case": "C02",
+        "check": "shell",
+        "path": "docs/plan/consumer-harness-evidence/c02-native-denials-nh2ij4y8/run.json",
+        "sha256": "7356754af7576798b702e9b9683a81f382ddecc2d9fcfd5e75bb1b50e618f327",
+        "raw_status": "PASS_LIMITED_NATIVE_UNAVAILABLE_TOOL_REFUSAL_CLEAN_TURN",
+        "derived_attestation": {
+          "status": "PASS_LIMITED_NATIVE_UNAVAILABLE_TOOL_REFUSAL_CLEAN_TURN",
+          "native_turn_status": "completed",
+          "negative_checks": 1,
+          "provider_dispatches": 0,
+          "case_trials": 0
+        }
+      },
+      {
+        "case": "C05",
+        "check": "resource",
+        "path": "docs/plan/consumer-harness-evidence/c05-native-denials-g2y72tdv/run.json",
+        "sha256": "4458457d74ec3514236b5a954342303797ad63c8faf9d00a1243543c8d77f664",
+        "raw_status": "PASS_LIMITED_NATIVE_TOOL_DENIAL",
+        "derived_attestation": {
+          "status": "PASS_LIMITED_NATIVE_TOOL_DENIAL",
+          "native_turn_status": "completed",
+          "negative_checks": 1,
+          "provider_dispatches": 0,
+          "case_trials": 0
+        }
+      },
+      {
+        "case": "C05",
+        "check": "read",
+        "path": "docs/plan/consumer-harness-evidence/c05-native-denials-rzhkrka5/run.json",
+        "sha256": "29e3c12b48c7f80363bff102483c70f5f51c3f430df01ac107911a4b2f9aaae9",
+        "raw_status": "PASS_LIMITED_NATIVE_UNAVAILABLE_TOOL_REFUSAL_CLEAN_TURN",
+        "derived_attestation": {
+          "status": "PASS_LIMITED_NATIVE_UNAVAILABLE_TOOL_REFUSAL_CLEAN_TURN",
+          "native_turn_status": "completed",
+          "negative_checks": 1,
+          "provider_dispatches": 0,
+          "case_trials": 0
+        }
+      },
+      {
+        "case": "C05",
+        "check": "write",
+        "path": "docs/plan/consumer-harness-evidence/c05-native-denials-i_9f9nme/run.json",
+        "sha256": "5c1768c42e0f19994e470ef685f41928708ef4cc0172b0eaf5f7d064a5be6802",
+        "raw_status": "PASS_LIMITED_NATIVE_UNAVAILABLE_TOOL_REFUSAL_CLEAN_TURN",
+        "derived_attestation": {
+          "status": "PASS_LIMITED_NATIVE_UNAVAILABLE_TOOL_REFUSAL_CLEAN_TURN",
+          "native_turn_status": "completed",
+          "negative_checks": 1,
+          "provider_dispatches": 0,
+          "case_trials": 0
+        }
+      },
+      {
+        "case": "C05",
+        "check": "command",
+        "path": "docs/plan/consumer-harness-evidence/c05-native-denials-iqndwdth/run.json",
+        "sha256": "c8d7f9b7d03a18d9d859a61e3b90b099c56ee3e3aa1d6a02cac12502dd40e9ad",
+        "raw_status": "PASS_LIMITED_NATIVE_UNAVAILABLE_TOOL_REFUSAL_CLEAN_TURN",
+        "derived_attestation": {
+          "status": "PASS_LIMITED_NATIVE_UNAVAILABLE_TOOL_REFUSAL_CLEAN_TURN",
+          "native_turn_status": "completed",
+          "negative_checks": 1,
+          "provider_dispatches": 0,
+          "case_trials": 0
+        }
+      },
+      {
+        "case": "C05",
+        "check": "shell",
+        "path": "docs/plan/consumer-harness-evidence/c05-native-denials-bvr3vbs1/run.json",
+        "sha256": "4ad7ba23713d3ecd7adafd74c14ab90889213b6bb02e7b57be738346fb4fb7d8",
+        "raw_status": "PASS_LIMITED_NATIVE_UNAVAILABLE_TOOL_REFUSAL_CLEAN_TURN",
+        "derived_attestation": {
+          "status": "PASS_LIMITED_NATIVE_UNAVAILABLE_TOOL_REFUSAL_CLEAN_TURN",
+          "native_turn_status": "completed",
+          "negative_checks": 1,
+          "provider_dispatches": 0,
+          "case_trials": 0
+        }
+      },
+      {
+        "case": "C18",
+        "check": "resource",
+        "path": "docs/plan/consumer-harness-evidence/c18-native-denials-fsl1n1or/run.json",
+        "sha256": "f8e6d4a3a8ba8c9baf7547308eb83e98c1c94fdbb104a7adbfe54ac00d9920e4",
+        "raw_status": "PASS_LIMITED_NATIVE_TOOL_DENIAL",
+        "derived_attestation": {
+          "status": "PASS_LIMITED_NATIVE_TOOL_DENIAL",
+          "native_turn_status": "completed",
+          "negative_checks": 1,
+          "provider_dispatches": 0,
+          "case_trials": 0
+        }
+      },
+      {
+        "case": "C18",
+        "check": "read",
+        "path": "docs/plan/consumer-harness-evidence/c18-native-denials-_r3zhi3p/run.json",
+        "sha256": "127adbb49d1701333582dde506124d6ba1b7bd5294db74e117d5911c54df4b64",
+        "raw_status": "PASS_LIMITED_NATIVE_UNAVAILABLE_TOOL_REFUSAL_CLEAN_TURN",
+        "derived_attestation": {
+          "status": "PASS_LIMITED_NATIVE_UNAVAILABLE_TOOL_REFUSAL_CLEAN_TURN",
+          "native_turn_status": "completed",
+          "negative_checks": 1,
+          "provider_dispatches": 0,
+          "case_trials": 0
+        }
+      },
+      {
+        "case": "C18",
+        "check": "write",
+        "path": "docs/plan/consumer-harness-evidence/c18-native-denials-scqlnl11/run.json",
+        "sha256": "74e74d1a5ebd90407ebbf0911e976ae2c2a28c6bcc1748bbda7030d1851cc05f",
+        "raw_status": "PASS_LIMITED_NATIVE_UNAVAILABLE_TOOL_REFUSAL_CLEAN_TURN",
+        "derived_attestation": {
+          "status": "PASS_LIMITED_NATIVE_UNAVAILABLE_TOOL_REFUSAL_CLEAN_TURN",
+          "native_turn_status": "completed",
+          "negative_checks": 1,
+          "provider_dispatches": 0,
+          "case_trials": 0
+        }
+      },
+      {
+        "case": "C18",
+        "check": "command",
+        "path": "docs/plan/consumer-harness-evidence/c18-native-denials-q3ev78ux/run.json",
+        "sha256": "0d8f0199ce94c209c9e8081ec8968f2f16a05e7ee8adc39e28643459195b6aee",
+        "raw_status": "PASS_LIMITED_NATIVE_UNAVAILABLE_TOOL_REFUSAL_CLEAN_TURN",
+        "derived_attestation": {
+          "status": "PASS_LIMITED_NATIVE_UNAVAILABLE_TOOL_REFUSAL_CLEAN_TURN",
+          "native_turn_status": "completed",
+          "negative_checks": 1,
+          "provider_dispatches": 0,
+          "case_trials": 0
+        }
+      },
+      {
+        "case": "C18",
+        "check": "shell",
+        "path": "docs/plan/consumer-harness-evidence/c18-native-denials-4jhon8s5/run.json",
+        "sha256": "247ed4ba6c6360b0d38e9184a4ddf5d88f931ec19cd444eb77d3f2245bb21414",
+        "raw_status": "PASS_LIMITED_NATIVE_UNAVAILABLE_TOOL_REFUSAL_CLEAN_TURN",
+        "derived_attestation": {
+          "status": "PASS_LIMITED_NATIVE_UNAVAILABLE_TOOL_REFUSAL_CLEAN_TURN",
+          "native_turn_status": "completed",
+          "negative_checks": 1,
+          "provider_dispatches": 0,
+          "case_trials": 0
+        }
+      },
+      {
+        "case": "C27",
+        "check": "resource",
+        "path": "docs/plan/consumer-harness-evidence/c27-native-denials-jd_xj63a/run.json",
+        "sha256": "25be910f7233f2196b17710816cb16dcd5cd9c7a6dab6497ef61c5b3e61afdd2",
+        "raw_status": "PASS_LIMITED_NATIVE_TOOL_DENIAL",
+        "derived_attestation": {
+          "status": "PASS_LIMITED_NATIVE_TOOL_DENIAL",
+          "native_turn_status": "completed",
+          "negative_checks": 1,
+          "provider_dispatches": 0,
+          "case_trials": 0
+        }
+      },
+      {
+        "case": "C27",
+        "check": "read",
+        "path": "docs/plan/consumer-harness-evidence/c27-native-denials-mtbti3ji/run.json",
+        "sha256": "9bd31292910e95594e333f2de925698ee9b00cfaf0566ad51170de4a11b856fb",
+        "raw_status": "PASS_LIMITED_NATIVE_TOOL_DENIAL",
+        "derived_attestation": {
+          "status": "PASS_LIMITED_NATIVE_TOOL_DENIAL",
+          "native_turn_status": "completed",
+          "negative_checks": 1,
+          "provider_dispatches": 0,
+          "case_trials": 0
+        }
+      },
+      {
+        "case": "C27",
+        "check": "write",
+        "path": "docs/plan/consumer-harness-evidence/c27-native-denials-nqxtselk/run.json",
+        "sha256": "a565f7cd53c41339f677f777b6641e7cdab92950e94b056eff4c3c943a2f0e3f",
+        "raw_status": "PASS_LIMITED_NATIVE_TOOL_DENIAL",
+        "derived_attestation": {
+          "status": "PASS_LIMITED_NATIVE_TOOL_DENIAL",
+          "native_turn_status": "completed",
+          "negative_checks": 1,
+          "provider_dispatches": 0,
+          "case_trials": 0
+        }
+      },
+      {
+        "case": "C27",
+        "check": "command",
+        "path": "docs/plan/consumer-harness-evidence/c27-native-denials-_a2_kldc/run.json",
+        "sha256": "c65faea6a00a369a13bfbe23d91e593f1b8a617d817284f99c46066d423b10d4",
+        "raw_status": "PASS_LIMITED_NATIVE_TOOL_DENIAL",
+        "derived_attestation": {
+          "status": "PASS_LIMITED_NATIVE_TOOL_DENIAL",
+          "native_turn_status": "completed",
+          "negative_checks": 1,
+          "provider_dispatches": 0,
+          "case_trials": 0
+        }
+      },
+      {
+        "case": "C27",
+        "check": "shell",
+        "path": "docs/plan/consumer-harness-evidence/c27-native-denials-6ymvyg0_/run.json",
+        "sha256": "c6a5a0d92a76ac188115acede323192da75a736f95f23fa3e06eee10c6600dfe",
+        "raw_status": "FAIL",
+        "derived_attestation": {
+          "status": "PASS_LIMITED_NATIVE_UNAVAILABLE_TOOL_REFUSAL_CLEAN_TURN",
+          "native_turn_status": "completed",
+          "negative_checks": 1,
+          "provider_dispatches": 0,
+          "case_trials": 0
+        }
+      }
+    ],
+    "c26_complementary_negative_bundle": {
+      "artifact": {
+        "path": "docs/plan/consumer-harness-evidence/c26-native-negative-verification-20261023.json",
+        "sha256": "716a9c846a08891917cebb713f5c255174e77645573f103e41ac63ce8c80ab30"
+      },
+      "status": "PASS_LIMITED_C26_NATIVE_NEGATIVE_TOOL_BUNDLE",
+      "recorded_file_hashes": "ALL_MATCH",
+      "provenance": "Derived bundle: retained first failed session plus one diagnosed isolated command experiment; not a fresh independent E2E trial."
+    },
+    "fixed_direct_native_os_checks": [
+      {
+        "case": "C02",
+        "path": "docs/plan/consumer-harness-evidence/c02-native-denials-hrhgw0do/run.json",
+        "sha256": "1d6aa51bef3f3b89bdb956ca8b6656a06ec48c012ab9960ce8f1f918daed7229",
+        "attestation": {
+          "status": "PASS_NATIVE_SHELL_SEATBELT_PROBE",
+          "native_turn_status": "completed",
+          "negative_checks": 4,
+          "positive_controls": 1,
+          "provider_dispatches": 0,
+          "case_trials": 0
+        },
+        "checks": {
+          "hidden_reads_denied": true,
+          "workspace_write_denied": true,
+          "unapproved_exec_denied": true,
+          "network_bind_denied": true
+        }
+      },
+      {
+        "case": "C05",
+        "path": "docs/plan/consumer-harness-evidence/c05-native-denials-fkqkfxx1/run.json",
+        "sha256": "631983f7a5d3e33fa8975c550492fb7a17b27a4104c4c9f62149ef009338e7ca",
+        "attestation": {
+          "status": "PASS_NATIVE_SHELL_SEATBELT_PROBE",
+          "native_turn_status": "completed",
+          "negative_checks": 4,
+          "positive_controls": 1,
+          "provider_dispatches": 0,
+          "case_trials": 0
+        },
+        "checks": {
+          "hidden_reads_denied": true,
+          "workspace_write_denied": true,
+          "unapproved_exec_denied": true,
+          "network_bind_denied": true
+        }
+      },
+      {
+        "case": "C18",
+        "path": "docs/plan/consumer-harness-evidence/c18-native-denials-yjxcj28c/run.json",
+        "sha256": "7a61bb3cdc788b92183122cfc1816ec895b248bfde90506ec955e689050ca8e6",
+        "attestation": {
+          "status": "PASS_NATIVE_SHELL_SEATBELT_PROBE",
+          "native_turn_status": "completed",
+          "negative_checks": 4,
+          "positive_controls": 1,
+          "provider_dispatches": 0,
+          "case_trials": 0
+        },
+        "checks": {
+          "hidden_reads_denied": true,
+          "workspace_write_denied": true,
+          "unapproved_exec_denied": true,
+          "network_bind_denied": true
+        }
+      },
+      {
+        "case": "C26",
+        "path": "docs/plan/consumer-harness-evidence/c26-native-denials-c13lzpqj/run.json",
+        "sha256": "1d6f44121e0648ad990e1e8a9c1c5bd675f0c4a519b0f722e3ff41417a689ad2",
+        "attestation": {
+          "status": "PASS_NATIVE_SHELL_SEATBELT_PROBE",
+          "native_turn_status": "completed",
+          "negative_checks": 4,
+          "positive_controls": 1,
+          "provider_dispatches": 0,
+          "case_trials": 0
+        },
+        "checks": {
+          "hidden_reads_denied": true,
+          "workspace_write_denied": true,
+          "unapproved_exec_denied": true,
+          "network_bind_denied": true
+        }
+      },
+      {
+        "case": "C27",
+        "path": "docs/plan/consumer-harness-evidence/c27-native-denials-fmugpe3c/run.json",
+        "sha256": "d218ccf8a1709ecf2a8108c009eaf0e088385cb5855ab64b7287db092516591e",
+        "attestation": {
+          "status": "PASS_NATIVE_SHELL_SEATBELT_PROBE",
+          "native_turn_status": "completed",
+          "negative_checks": 4,
+          "positive_controls": 1,
+          "provider_dispatches": 0,
+          "case_trials": 0
+        },
+        "checks": {
+          "hidden_reads_denied": true,
+          "workspace_write_denied": true,
+          "unapproved_exec_denied": true,
+          "network_bind_denied": true
+        }
+      }
+    ],
+    "actual_luna_effect_schemas": [
+      {
+        "case": "C26",
+        "path": "docs/plan/consumer-harness-evidence/schema-c26-8bv12ia0/probe.json",
+        "sha256": "14a6ce32252d0c33c0d02d9c1b340f46bc2762678ab5e7831015af298af54f24",
+        "journal": {
+          "path": "docs/plan/consumer-harness-evidence/schema-c26-8bv12ia0/stream.json",
+          "sha256": "b55d0e3f13f4bfcf48da165bd29df3b59547448331839cefeaf8610788640004"
+        },
+        "schema_sha256": "4e14785e3ca1084e61c49b8cbad253c47ecab8db7e7895dd25cefef65474b64c",
+        "generation_id": "gen-1792948623-4AJKOsc2uPSjZ8W29uOo",
+        "model": "openai/gpt-6-luna",
+        "finish_reason": "tool_calls",
+        "stream_done": true,
+        "usage": {
+          "prompt_tokens": 773,
+          "completion_tokens": 106,
+          "total_tokens": 879,
+          "cost": 0.0001303
+        },
+        "tool_executions": 0,
+        "case_trials": 0
+      },
+      {
+        "case": "C27",
+        "path": "docs/plan/consumer-harness-evidence/schema-c27-g2j7w25e/probe.json",
+        "sha256": "4241a2a9ce907fc8d297e12e203efcd7fd015250075691efa035ed54b86e2311",
+        "journal": {
+          "path": "docs/plan/consumer-harness-evidence/schema-c27-g2j7w25e/stream.json",
+          "sha256": "be9946b402575439a2f575b132de2ad820f89e4236da478734412e1246931958"
+        },
+        "schema_sha256": "4e14785e3ca1084e61c49b8cbad253c47ecab8db7e7895dd25cefef65474b64c",
+        "generation_id": "gen-1792948736-uXbipkMYhvbSZiAPkZd0",
+        "model": "openai/gpt-6-luna",
+        "finish_reason": "tool_calls",
+        "stream_done": true,
+        "usage": {
+          "prompt_tokens": 773,
+          "completion_tokens": 106,
+          "total_tokens": 879,
+          "cost": 0.0001303
+        },
+        "tool_executions": 0,
+        "case_trials": 0
+      }
+    ]
+  },
+  "source_fingerprints": {
+    "<DEVELOPMENT_REPO>/docs/plan/consumer_luna_runner.py": "b9a73eb9e50938f5a02c94250d6015566c25671a964b4cd00e4df57d9d480ae5",
+    "<DEVELOPMENT_REPO>/docs/plan/consumer_native_approval.py": "3555b4884f130b78ca48d791ba7490d7c97d8b6ac4a46784e6ed626ea4246097",
+    "<DEVELOPMENT_REPO>/docs/plan/consumer_effect_controller.py": "d6caca8fa77e396a07907485d4e514b3605c96234462aaa5bca0cbc3df738691",
+    "<DEVELOPMENT_REPO>/docs/plan/consumer_provider_smoke.py": "85d167365bfba8f8383f5a748174a6c5ef2592c36528bc089350c768c322b95f",
+    "docs/plan/openrouter_completion.mjs": "4ab53061fc22b2078e2235c1ae1a51cf20b45a344e6eb9cbb978e691e4e7d913",
+    "/opt/homebrew/lib/node_modules/@openai/codex/node_modules/@openai/codex-darwin-arm64/vendor/aarch64-apple-darwin/bin/codex": "d8990e3ee7acfbc26f91265b12a1a83f0fee40d0e0f8f1f40a37d4ec21f499cf"
+  },
+  "quality": {
+    "provider_runner_native_driver_tests": "906 passed",
+    "provider_streaming_tests": "14 passed",
+    "strict_provider_mypy": "2 files PASS",
+    "ruff_check": "PASS",
+    "ruff_format_check": "PASS",
+    "mypy_src_tests": "PASS",
+    "repository_tests": "51 passed"
+  },
+  "external_phase": {
+    "provider": "OpenRouter",
+    "model": "openai/gpt-6-luna",
+    "requests": 2,
+    "cost_usd": 0.0002606,
+    "tool_executions": 0,
+    "case_inputs_disclosed": false,
+    "case_trials": 0,
+    "retries": 0,
+    "fallbacks": 0,
+    "local_generation_timeout": null
+  },
+  "current_positive_refresh": {
+    "new_native_sessions": 3,
+    "profiles": [
+      "C18",
+      "C26",
+      "C27"
+    ],
+    "provider_dispatches": 0,
+    "case_trials": 0,
+    "c18_recovery": {
+      "path": "docs/plan/consumer-harness-evidence/p2-effect-schema-streaming-20261025/c18-positive-offline-recovery.json",
+      "sha256": "bae10548c1d578d3f2c22a13db6986462e25a3fc1f4ab0e6f343d95f83aab847"
+    },
+    "historical_wrapper_terminal": {
+      "path": "docs/plan/consumer-harness-evidence/p2-effect-schema-streaming-20261025/c18-positive-revalidation-terminal.json",
+      "sha256": "fcc72d6cf330ed04cf10be0a2de9ac9b3ab89ff4073216dca9a450b1049a510f"
+    },
+    "note": "C18 native and current validator passed before wrapper KeyError source_after. Stop honored; offline recovery used actual source inventory with no native replay. Original wrapper failure and anti-loop count retained. Subsequent C26/C27 separately admitted with corrected wrapper.",
+    "c18_recovery_key_note": "The preserved recovery capsule native_sha256 field hashes the saved report file, not the executable. Binary fingerprints are separately recorded in current_positive_preflights and source_fingerprints."
+  },
+  "limits": [
+    "Acceptance is limited to the five named profiles, not all50 cases or corpus success.",
+    "Direct OS probes use explicit diagnostic shell helper grants and externalSandbox under restrictive outer Seatbelt; fixed checks do not establish arbitrary syscall isolation or unchanged production shell catalog.",
+    "Historical raw FAIL reports and derived classifications remain distinct and immutable.",
+    "This is agent verification, not human release approval or a product release decision.",
+    "Any changed source/config/native binary requires its normal fresh proof gates.",
+    "Before any future real case run, verify its separate authorization and all parent native-driver generation duration controls against the user no-local-generation-deadline directive; only the synthetic schema API path was exercised here."
+  ],
+  "case_network": "denied",
+  "case_execution_authorized_by_this_review": false,
+  "unresolved_within_scope": [],
+  "anti_loop": {
+    "failures": 69,
+    "unimproved_revisions": 0,
+    "pending": false,
+    "permit": null,
+    "last_exit_code": 0
+  }
+}

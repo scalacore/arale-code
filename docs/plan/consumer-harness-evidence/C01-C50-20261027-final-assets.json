@@ -1,0 +1,919 @@
+{
+  "purpose": "Selected Arale content assets and offline comparison with accepted C01-C50 historical runs",
+  "selected_date": "2026-10-27",
+  "selection": "Current working-tree bytes of the 21 procedure assets and four instruction assets; final content candidate for package preparation, not deployment or user release acceptance",
+  "source_base_commit": "7807c5be577d9642fc4a5d292e29f0e48bb1c568",
+  "source_state": "Working tree contains uncommitted source changes; content identity is the hashes below, not the base commit alone",
+  "procedure_asset_count": 21,
+  "procedure_manifest_sha256": "669d8c9e08875fcc9dd5ea0b4dbc43c19b00fb16ee35dd5a7155170693d22f55",
+  "procedure_manifest_method": "SHA-256 of the ordered A03 latest_verification asset rows after replacing bytes and sha256 with current file values; JSON sorted keys, compact separators, ensure_ascii=false, UTF-8",
+  "instruction_asset_count": 4,
+  "procedure_assets": [
+    {
+      "id": "P00",
+      "file": "src/arale_code/procedures/00-guide.yaml",
+      "public_id": "guide",
+      "uri": "arale://procedure/guide",
+      "bytes": 54040,
+      "sha256": "dabf9b0bd75774c4c8ac4cd7401362c9df37a49bde27b0f2e4305d9139c24e9c"
+    },
+    {
+      "id": "P01",
+      "file": "src/arale_code/procedures/01-project-reconnaissance.yaml",
+      "public_id": "p01-project-reconnaissance",
+      "uri": "arale://procedure/p01-project-reconnaissance",
+      "bytes": 13745,
+      "sha256": "39578c467c53ca1fb3d5def8783d5ee658e99491973ded4796f21ee92bd23dbe"
+    },
+    {
+      "id": "P02",
+      "file": "src/arale_code/procedures/02-initial-state-baseline.yaml",
+      "public_id": "p02-initial-state-baseline",
+      "uri": "arale://procedure/p02-initial-state-baseline",
+      "bytes": 15142,
+      "sha256": "4ad903e82857f31a821e19ab7ab63a1a60122c777e4b8024a0bc54da0585119e"
+    },
+    {
+      "id": "P03",
+      "file": "src/arale_code/procedures/03-environment-diagnosis.yaml",
+      "public_id": "p03-environment-diagnosis",
+      "uri": "arale://procedure/p03-environment-diagnosis",
+      "bytes": 14034,
+      "sha256": "c219ff055e1b2dd357273f208e05dce819fd844a5915e346c55ed9d3d98e5993"
+    },
+    {
+      "id": "P04",
+      "file": "src/arale_code/procedures/04-mandate-clarification.yaml",
+      "public_id": "p04-mandate-clarification",
+      "uri": "arale://procedure/p04-mandate-clarification",
+      "bytes": 12555,
+      "sha256": "02721613e5ab5ca27314d8193c47d88473af2cefc87865be42c5548bd4e71fa2"
+    },
+    {
+      "id": "P05",
+      "file": "src/arale_code/procedures/05-behavior-specification.yaml",
+      "public_id": "p05-behavior-specification",
+      "uri": "arale://procedure/p05-behavior-specification",
+      "bytes": 12766,
+      "sha256": "6c2be0baa50fa364e4386f4bbd0cce7f195afedd9991235201329aa722824a23"
+    },
+    {
+      "id": "P06",
+      "file": "src/arale_code/procedures/06-interaction-design.yaml",
+      "public_id": "p06-interaction-design",
+      "uri": "arale://procedure/p06-interaction-design",
+      "bytes": 13777,
+      "sha256": "34517667d196843f10ff5fd3533de391551d1434d9e170d7fa47b0c2612edfbd"
+    },
+    {
+      "id": "P07",
+      "file": "src/arale_code/procedures/07-technical-design.yaml",
+      "public_id": "p07-technical-design",
+      "uri": "arale://procedure/p07-technical-design",
+      "bytes": 14049,
+      "sha256": "eb6c9c21734cb5eec6ae6e615e009965256719fd7817293c85b1466c582402cb"
+    },
+    {
+      "id": "P08",
+      "file": "src/arale_code/procedures/08-contracts-compatibility.yaml",
+      "public_id": "p08-contracts-compatibility",
+      "uri": "arale://procedure/p08-contracts-compatibility",
+      "bytes": 16566,
+      "sha256": "0f332cdc28e13d41dace4625916fe1ad6e95cacba46ce445c61f6d6f410465f1"
+    },
+    {
+      "id": "P09",
+      "file": "src/arale_code/procedures/09-plan-tasks-dependencies.yaml",
+      "public_id": "p09-plan-tasks-dependencies",
+      "uri": "arale://procedure/p09-plan-tasks-dependencies",
+      "bytes": 14650,
+      "sha256": "451ef6639fb3b801c70a993acc61af1a1317490cddceeed0a667624d1c194847"
+    },
+    {
+      "id": "P10",
+      "file": "src/arale_code/procedures/10-coherence-coverage.yaml",
+      "public_id": "p10-coherence-coverage",
+      "uri": "arale://procedure/p10-coherence-coverage",
+      "bytes": 14364,
+      "sha256": "7393c5abc044c5dfd6e9f8eddf0d7b870b5ca9977e326826b0517a5e247fada5"
+    },
+    {
+      "id": "P11",
+      "file": "src/arale_code/procedures/11-malfunction-diagnosis.yaml",
+      "public_id": "p11-malfunction-diagnosis",
+      "uri": "arale://procedure/p11-malfunction-diagnosis",
+      "bytes": 15603,
+      "sha256": "0bc02f6814cb973fd2311284042ae9e8b24eb091823fe93e61ed6d2f94d52f14"
+    },
+    {
+      "id": "P12",
+      "file": "src/arale_code/procedures/12-task-execution.yaml",
+      "public_id": "p12-task-execution",
+      "uri": "arale://procedure/p12-task-execution",
+      "bytes": 16629,
+      "sha256": "6d962b4966689a1564cd064bbed5d21e3e38bd36cd63f41754903015c731a924"
+    },
+    {
+      "id": "P13",
+      "file": "src/arale_code/procedures/13-controlled-refactoring.yaml",
+      "public_id": "p13-controlled-refactoring",
+      "uri": "arale://procedure/p13-controlled-refactoring",
+      "bytes": 14188,
+      "sha256": "27ca3a90483c5dfbd789a4d65a29637d46f32d35e3dc7ec32083c35d37aeb5dd"
+    },
+    {
+      "id": "P14",
+      "file": "src/arale_code/procedures/14-performance-optimization.yaml",
+      "public_id": "p14-performance-optimization",
+      "uri": "arale://procedure/p14-performance-optimization",
+      "bytes": 14512,
+      "sha256": "7c4efd6e5f8050993cd8fdb5316656bae4501cbaaf1afde59de0e52a99cd6913"
+    },
+    {
+      "id": "P15",
+      "file": "src/arale_code/procedures/15-testing-verification.yaml",
+      "public_id": "p15-testing-verification",
+      "uri": "arale://procedure/p15-testing-verification",
+      "bytes": 15329,
+      "sha256": "fbd12038b9c713d55b0f34c1a18018c8ce579564e1aae1c1d8f500268ed6e63c"
+    },
+    {
+      "id": "P16",
+      "file": "src/arale_code/procedures/16-change-review.yaml",
+      "public_id": "p16-change-review",
+      "uri": "arale://procedure/p16-change-review",
+      "bytes": 13513,
+      "sha256": "a3920e47dc29a90339010419cda63050a0507ded3ac253277a701477a2f06b12"
+    },
+    {
+      "id": "P17",
+      "file": "src/arale_code/procedures/17-security-data-integrity.yaml",
+      "public_id": "p17-security-data-integrity",
+      "uri": "arale://procedure/p17-security-data-integrity",
+      "bytes": 13932,
+      "sha256": "a7bb9402f0011dddb24b6b9cb984cf4c7c9d86bfc365a4351f087a7bb5ed67cb"
+    },
+    {
+      "id": "P18",
+      "file": "src/arale_code/procedures/18-integration-migrations.yaml",
+      "public_id": "p18-integration-migrations",
+      "uri": "arale://procedure/p18-integration-migrations",
+      "bytes": 15489,
+      "sha256": "ebf7a86c5767cbefa02aa86dce9505846acc29fafe771aa0abe00f85f9279625"
+    },
+    {
+      "id": "P19",
+      "file": "src/arale_code/procedures/19-state-recovery-replanning.yaml",
+      "public_id": "p19-state-recovery-replanning",
+      "uri": "arale://procedure/p19-state-recovery-replanning",
+      "bytes": 15796,
+      "sha256": "771486f74d2c6252a01b8d53a04e073dee1b6d659cfa153fd4181f1d1194cf91"
+    },
+    {
+      "id": "P20",
+      "file": "src/arale_code/procedures/20-acceptance-delivery.yaml",
+      "public_id": "p20-acceptance-delivery",
+      "uri": "arale://procedure/p20-acceptance-delivery",
+      "bytes": 15147,
+      "sha256": "deb9abc4a0de1cb47cc8fd59345289279dc82f9b9a4081fdfe7cc77ef4d06d87"
+    }
+  ],
+  "instruction_assets": [
+    {
+      "id": "design-spec",
+      "file": "src/arale_code/instructions/design-spec.md",
+      "uri": "instructions://document/design-spec",
+      "bytes": 1208,
+      "sha256": "bc148c542e17290cdd26329ee93f5f461cc4b6d0863122faf5620b4382ebef3b"
+    },
+    {
+      "id": "implementation-plan",
+      "file": "src/arale_code/instructions/implementation-plan.md",
+      "uri": "instructions://document/implementation-plan",
+      "bytes": 772,
+      "sha256": "be9bc5bb969eb50ce4e5da37a3a4bd2675cca793e4e66eef49218c116c417245"
+    },
+    {
+      "id": "code-quality",
+      "file": "src/arale_code/instructions/code-quality.md",
+      "uri": "instructions://document/code-quality",
+      "bytes": 973,
+      "sha256": "ac2de6053253c7f056fa603a363b348c051fd7a8c015d7268e6b9b0f3abc842c"
+    },
+    {
+      "id": "testing",
+      "file": "src/arale_code/instructions/testing.md",
+      "uri": "instructions://document/testing",
+      "bytes": 894,
+      "sha256": "1113eb2ad6142750c508f1cf4d3d7eee73eed6e6c425a652e83ffd26d1edc927"
+    }
+  ],
+  "effective_dispositions": "docs/plan/consumer-harness-evidence/C01-C50-20261027-effective-dispositions.json",
+  "case_comparison": [
+    {
+      "case": "C01",
+      "accepted_run": "docs/plan/consumer-harness-evidence/luna-native-ite_45xb/run.json",
+      "accepted_run_sha256": "2e2d98763ab5ad2f2fb91c1345af3a0fa29369ca94d12cf75e736f45f4653fb2",
+      "changed_assets": [
+        "P00",
+        "P05",
+        "P08",
+        "P09",
+        "P10",
+        "P12"
+      ],
+      "asset_match": false,
+      "current_build_case_outcome": "unverified_on_selected_assets"
+    },
+    {
+      "case": "C02",
+      "accepted_run": "docs/plan/consumer-harness-evidence/luna-native-_z_1lvkx/run.json",
+      "accepted_run_sha256": "9fc687aea5f85601db4fec722e1f7f95c5a209d80ea2a1673cf940bac0efbcaa",
+      "changed_assets": [
+        "P00",
+        "P08",
+        "P09",
+        "P10",
+        "P12"
+      ],
+      "asset_match": false,
+      "current_build_case_outcome": "unverified_on_selected_assets"
+    },
+    {
+      "case": "C03",
+      "accepted_run": "docs/plan/consumer-harness-evidence/luna-native-pzatldh1/run.json",
+      "accepted_run_sha256": "c577d19ce83f9c0e85e2e5410c1196654c7a50a2b783c6d6b193e467f07a5c62",
+      "changed_assets": [
+        "P00",
+        "P05",
+        "P08",
+        "P09",
+        "P10",
+        "P12"
+      ],
+      "asset_match": false,
+      "current_build_case_outcome": "unverified_on_selected_assets"
+    },
+    {
+      "case": "C04",
+      "accepted_run": "docs/plan/consumer-harness-evidence/luna-native-ds_drtt1/run.json",
+      "accepted_run_sha256": "4b80fb942947e9db414569e072839c2ad8233ba68679b19b72f8787bdbd86c65",
+      "changed_assets": [
+        "P00",
+        "P05",
+        "P08",
+        "P09",
+        "P10",
+        "P12"
+      ],
+      "asset_match": false,
+      "current_build_case_outcome": "unverified_on_selected_assets"
+    },
+    {
+      "case": "C05",
+      "accepted_run": "docs/plan/consumer-harness-evidence/luna-native-zw0k_ewv/run.json",
+      "accepted_run_sha256": "87433c28a9c076214e585fced96826a51efad67ac3fc9b2891bddbfebc2157e9",
+      "changed_assets": [
+        "P00",
+        "P08",
+        "P09"
+      ],
+      "asset_match": false,
+      "current_build_case_outcome": "unverified_on_selected_assets"
+    },
+    {
+      "case": "C06",
+      "accepted_run": "docs/plan/consumer-harness-evidence/luna-native-xrbilplr/run.json",
+      "accepted_run_sha256": "af4f673cb949a63d13e0fd87a0bdb0a5767e02f503c338426f063823f729e9ad",
+      "changed_assets": [
+        "P00",
+        "P05",
+        "P08",
+        "P09",
+        "P10",
+        "P12"
+      ],
+      "asset_match": false,
+      "current_build_case_outcome": "unverified_on_selected_assets"
+    },
+    {
+      "case": "C07",
+      "accepted_run": "docs/plan/consumer-harness-evidence/luna-native-qa79jsjp/run.json",
+      "accepted_run_sha256": "81594a22cbdf689b0551883fc439b0703ece07eec695f99abb9768f81f78645c",
+      "changed_assets": [
+        "P00",
+        "P05",
+        "P08",
+        "P09",
+        "P10",
+        "P12"
+      ],
+      "asset_match": false,
+      "current_build_case_outcome": "unverified_on_selected_assets"
+    },
+    {
+      "case": "C08",
+      "accepted_run": "docs/plan/consumer-harness-evidence/luna-native-cdgvyk41/run.json",
+      "accepted_run_sha256": "a5594ec815e417675b8975ad2c764390ce0c61668af33d95949e05a9eec29214",
+      "changed_assets": [
+        "P00",
+        "P05",
+        "P08",
+        "P09",
+        "P10",
+        "P12"
+      ],
+      "asset_match": false,
+      "current_build_case_outcome": "unverified_on_selected_assets"
+    },
+    {
+      "case": "C09",
+      "accepted_run": "docs/plan/consumer-harness-evidence/luna-native-bx424_h0/run.json",
+      "accepted_run_sha256": "fb4714cd3d18ef3e5942650a7c7c4d696204b8102aa37c042fb0547592f98a54",
+      "changed_assets": [
+        "P00",
+        "P05",
+        "P08",
+        "P09",
+        "P10",
+        "P12"
+      ],
+      "asset_match": false,
+      "current_build_case_outcome": "unverified_on_selected_assets"
+    },
+    {
+      "case": "C10",
+      "accepted_run": "docs/plan/consumer-harness-evidence/luna-native-6p0whdtg/run.json",
+      "accepted_run_sha256": "71d64ebf0ec8b657fbee6f72d384900837b4a993845efec73c98d35eb359be61",
+      "changed_assets": [
+        "P00",
+        "P05",
+        "P08",
+        "P09",
+        "P10",
+        "P12"
+      ],
+      "asset_match": false,
+      "current_build_case_outcome": "unverified_on_selected_assets"
+    },
+    {
+      "case": "C11",
+      "accepted_run": "docs/plan/consumer-harness-evidence/luna-native-ffvyigmf/run.json",
+      "accepted_run_sha256": "c0082a6728202b89da5c4d32e3a15d85dacd9e276af2d19d4715f9fd1a6d45fe",
+      "changed_assets": [
+        "P00",
+        "P05",
+        "P08",
+        "P09",
+        "P10",
+        "P12"
+      ],
+      "asset_match": false,
+      "current_build_case_outcome": "unverified_on_selected_assets"
+    },
+    {
+      "case": "C12",
+      "accepted_run": "docs/plan/consumer-harness-evidence/luna-native-sho6cqor/run.json",
+      "accepted_run_sha256": "3139945097f08effe887954f279eab88919a43841f227e02a57074abe5ad2ceb",
+      "changed_assets": [
+        "P00",
+        "P05",
+        "P08",
+        "P09",
+        "P10",
+        "P12"
+      ],
+      "asset_match": false,
+      "current_build_case_outcome": "unverified_on_selected_assets"
+    },
+    {
+      "case": "C13",
+      "accepted_run": "docs/plan/consumer-harness-evidence/luna-native-t_rut6wn/run.json",
+      "accepted_run_sha256": "93f9eb237a152b5bc6ead1a31259028fb3df16a2dd448405d591469d0e865911",
+      "changed_assets": [
+        "P00",
+        "P05",
+        "P08",
+        "P09",
+        "P10",
+        "P12"
+      ],
+      "asset_match": false,
+      "current_build_case_outcome": "unverified_on_selected_assets"
+    },
+    {
+      "case": "C14",
+      "accepted_run": "docs/plan/consumer-harness-evidence/luna-native-kct5vga3/run.json",
+      "accepted_run_sha256": "d8fce7e400858af61d8081736deff911064fcfa539e91efaca7450d5e964a1ec",
+      "changed_assets": [
+        "P00",
+        "P05",
+        "P08",
+        "P09",
+        "P10",
+        "P12"
+      ],
+      "asset_match": false,
+      "current_build_case_outcome": "unverified_on_selected_assets"
+    },
+    {
+      "case": "C15",
+      "accepted_run": "docs/plan/consumer-harness-evidence/luna-native-ap0b_igq/run.json",
+      "accepted_run_sha256": "cdee846a17db5b930e8ef522d6c8449c036bd4dfc932d40770a22af33f58033d",
+      "changed_assets": [
+        "P00",
+        "P05",
+        "P08",
+        "P09",
+        "P10",
+        "P12"
+      ],
+      "asset_match": false,
+      "current_build_case_outcome": "unverified_on_selected_assets"
+    },
+    {
+      "case": "C16",
+      "accepted_run": "docs/plan/consumer-harness-evidence/luna-native-ub14aqde/run.json",
+      "accepted_run_sha256": "07da915b93971778881aa9219eaf9f8dd7485ca1c16504429eefed9c06452322",
+      "changed_assets": [
+        "P00",
+        "P05",
+        "P08",
+        "P09",
+        "P10",
+        "P12"
+      ],
+      "asset_match": false,
+      "current_build_case_outcome": "unverified_on_selected_assets"
+    },
+    {
+      "case": "C17",
+      "accepted_run": "docs/plan/consumer-harness-evidence/luna-native-mfgfq0ub/run.json",
+      "accepted_run_sha256": "4b2cdc69d00b465e09533dbf7230e4e61f1dffba802c695d8723dd30bf38ed2e",
+      "changed_assets": [
+        "P00",
+        "P05",
+        "P08",
+        "P09",
+        "P10",
+        "P12"
+      ],
+      "asset_match": false,
+      "current_build_case_outcome": "unverified_on_selected_assets"
+    },
+    {
+      "case": "C18",
+      "accepted_run": "docs/plan/consumer-harness-evidence/luna-native-j1wcxdtf/run.json",
+      "accepted_run_sha256": "909a4b2546cb8656d48c43d2fde5eade60180b37147ab74cd057e457e96e259f",
+      "changed_assets": [
+        "P00",
+        "P08",
+        "P09",
+        "P10",
+        "P12"
+      ],
+      "asset_match": false,
+      "current_build_case_outcome": "unverified_on_selected_assets"
+    },
+    {
+      "case": "C19",
+      "accepted_run": "docs/plan/consumer-harness-evidence/luna-native-uajv4pan/run.json",
+      "accepted_run_sha256": "ce129f4db3052a165364e2027837b086b87c0af295c014bdc819fc0005ab0a0b",
+      "changed_assets": [
+        "P00",
+        "P05",
+        "P08",
+        "P09",
+        "P10",
+        "P12"
+      ],
+      "asset_match": false,
+      "current_build_case_outcome": "unverified_on_selected_assets"
+    },
+    {
+      "case": "C20",
+      "accepted_run": "docs/plan/consumer-harness-evidence/luna-native-mr8howbk/run.json",
+      "accepted_run_sha256": "310113b3864c6771de8955686750fd5b9fd9287fb174cba22dcfc07cf8f93357",
+      "changed_assets": [
+        "P00",
+        "P05",
+        "P08",
+        "P09",
+        "P10",
+        "P12"
+      ],
+      "asset_match": false,
+      "current_build_case_outcome": "unverified_on_selected_assets"
+    },
+    {
+      "case": "C21",
+      "accepted_run": "docs/plan/consumer-harness-evidence/luna-native-zmiymnsf/run.json",
+      "accepted_run_sha256": "6618ce04fd7db3485c0ecfcef85035aff2773237acff7eb52c4f2eb8b3ef56a2",
+      "changed_assets": [
+        "P00",
+        "P05",
+        "P08",
+        "P09",
+        "P10",
+        "P12"
+      ],
+      "asset_match": false,
+      "current_build_case_outcome": "unverified_on_selected_assets"
+    },
+    {
+      "case": "C22",
+      "accepted_run": "docs/plan/consumer-harness-evidence/luna-native-1kff3xls/run.json",
+      "accepted_run_sha256": "212777f1a184d580c221fec0ae2475483cf41fa223322bedefb90687cc62f846",
+      "changed_assets": [
+        "P00",
+        "P05",
+        "P08",
+        "P09",
+        "P10",
+        "P12"
+      ],
+      "asset_match": false,
+      "current_build_case_outcome": "unverified_on_selected_assets"
+    },
+    {
+      "case": "C23",
+      "accepted_run": "docs/plan/consumer-harness-evidence/luna-native-nhugabwz/run.json",
+      "accepted_run_sha256": "f8f7ca243123efa44b3e742e368fc3088b4bc415692fc2917c1e41bc05c2ccc4",
+      "changed_assets": [
+        "P00",
+        "P05",
+        "P08",
+        "P09",
+        "P10",
+        "P12"
+      ],
+      "asset_match": false,
+      "current_build_case_outcome": "unverified_on_selected_assets"
+    },
+    {
+      "case": "C24",
+      "accepted_run": "docs/plan/consumer-harness-evidence/luna-native-3h7fpemj/run.json",
+      "accepted_run_sha256": "9265ecf4014be52cf2fef9e614a0ee3991fe8eab3c42301e1433ab0be9ca29f1",
+      "changed_assets": [
+        "P00",
+        "P05",
+        "P08",
+        "P09",
+        "P10",
+        "P12"
+      ],
+      "asset_match": false,
+      "current_build_case_outcome": "unverified_on_selected_assets"
+    },
+    {
+      "case": "C25",
+      "accepted_run": "docs/plan/consumer-harness-evidence/luna-native-z1ukw_tv/run.json",
+      "accepted_run_sha256": "1046539e3cb8541c1e2240698232383161110d232310257a2d4cea0e856e523d",
+      "changed_assets": [
+        "P00",
+        "P05",
+        "P08",
+        "P09",
+        "P10",
+        "P12"
+      ],
+      "asset_match": false,
+      "current_build_case_outcome": "unverified_on_selected_assets"
+    },
+    {
+      "case": "C26",
+      "accepted_run": "docs/plan/consumer-harness-evidence/luna-native-pggny09w/run.json",
+      "accepted_run_sha256": "244cb9d0401bd3edf956dafa22ba026aacb6fdeb91ef5c5c1bf1bedd61f0e9f4",
+      "changed_assets": [
+        "P00",
+        "P08",
+        "P09"
+      ],
+      "asset_match": false,
+      "current_build_case_outcome": "unverified_on_selected_assets"
+    },
+    {
+      "case": "C27",
+      "accepted_run": "docs/plan/consumer-harness-evidence/luna-native-wbvx5wtc/run.json",
+      "accepted_run_sha256": "5a608d2a39eea6c27325c514ce06d831363775f095de6e98fb7e99c394295700",
+      "changed_assets": [
+        "P00",
+        "P08",
+        "P09",
+        "P10",
+        "P12"
+      ],
+      "asset_match": false,
+      "current_build_case_outcome": "unverified_on_selected_assets"
+    },
+    {
+      "case": "C28",
+      "accepted_run": "docs/plan/consumer-harness-evidence/luna-native-pe2ajjid/run.json",
+      "accepted_run_sha256": "a48f357be86b9e01af5c15a095279c66d4be63e573c75c7638e0d74e7ea47d7d",
+      "changed_assets": [
+        "P00",
+        "P05",
+        "P08",
+        "P09",
+        "P10",
+        "P12"
+      ],
+      "asset_match": false,
+      "current_build_case_outcome": "unverified_on_selected_assets"
+    },
+    {
+      "case": "C29",
+      "accepted_run": "docs/plan/consumer-harness-evidence/luna-native-kcfi49d8/run.json",
+      "accepted_run_sha256": "8d5b412ce85503accd5d0f1a198573e5a6df7b639d7551a59808088583b815ab",
+      "changed_assets": [
+        "P00",
+        "P05",
+        "P08",
+        "P09",
+        "P10",
+        "P12"
+      ],
+      "asset_match": false,
+      "current_build_case_outcome": "unverified_on_selected_assets"
+    },
+    {
+      "case": "C30",
+      "accepted_run": "docs/plan/consumer-harness-evidence/luna-native-55ieyzop/run.json",
+      "accepted_run_sha256": "49269f6c3020d61109bf1b0ebfc94ac20f8ac165925d44f954fd23a2d3fd090a",
+      "changed_assets": [
+        "P00",
+        "P05",
+        "P08",
+        "P09",
+        "P10",
+        "P12"
+      ],
+      "asset_match": false,
+      "current_build_case_outcome": "unverified_on_selected_assets"
+    },
+    {
+      "case": "C31",
+      "accepted_run": "docs/plan/consumer-harness-evidence/luna-native-f5e0lxr8/run.json",
+      "accepted_run_sha256": "d0379922d95721699d788b697d9dfd4f0d38138ac6004a70b7c40a32d79e3ddc",
+      "changed_assets": [
+        "P00",
+        "P05",
+        "P08",
+        "P09",
+        "P10",
+        "P12"
+      ],
+      "asset_match": false,
+      "current_build_case_outcome": "unverified_on_selected_assets"
+    },
+    {
+      "case": "C32",
+      "accepted_run": "docs/plan/consumer-harness-evidence/luna-native-j7eiy5u3/run.json",
+      "accepted_run_sha256": "c9cd82cf300ddfb9e276a06832dcdd321d2ed450d6f624472addd5cfe1374b16",
+      "changed_assets": [
+        "P00",
+        "P05",
+        "P08",
+        "P09",
+        "P10",
+        "P12"
+      ],
+      "asset_match": false,
+      "current_build_case_outcome": "unverified_on_selected_assets"
+    },
+    {
+      "case": "C33",
+      "accepted_run": "docs/plan/consumer-harness-evidence/luna-native-_8zm_b92/run.json",
+      "accepted_run_sha256": "3806ff4ed8f9b294fbdd07c118c431038831105969ed99739f6e98f5d461e743",
+      "changed_assets": [
+        "P00",
+        "P05",
+        "P08",
+        "P09",
+        "P10",
+        "P12"
+      ],
+      "asset_match": false,
+      "current_build_case_outcome": "unverified_on_selected_assets"
+    },
+    {
+      "case": "C34",
+      "accepted_run": "docs/plan/consumer-harness-evidence/luna-native-zi1wti1m/run.json",
+      "accepted_run_sha256": "919b89291a2a9af0bc3d66042974607822223ca1b826e60b569310a538834aca",
+      "changed_assets": [
+        "P00",
+        "P05",
+        "P08",
+        "P09",
+        "P10",
+        "P12"
+      ],
+      "asset_match": false,
+      "current_build_case_outcome": "unverified_on_selected_assets"
+    },
+    {
+      "case": "C35",
+      "accepted_run": "docs/plan/consumer-harness-evidence/luna-native-27cdazsw/run.json",
+      "accepted_run_sha256": "f988f02af8205d3eaf79f5f7004b051faecd1978382b878afe4150cd1bc27525",
+      "changed_assets": [
+        "P00",
+        "P05",
+        "P08",
+        "P09",
+        "P10",
+        "P12"
+      ],
+      "asset_match": false,
+      "current_build_case_outcome": "unverified_on_selected_assets"
+    },
+    {
+      "case": "C36",
+      "accepted_run": "docs/plan/consumer-harness-evidence/luna-native-jonug296/run.json",
+      "accepted_run_sha256": "015441d5414001328239079658f74f22946e264849d14d1171a16f4ca5fd33e4",
+      "changed_assets": [
+        "P00",
+        "P05",
+        "P08",
+        "P09",
+        "P10",
+        "P12"
+      ],
+      "asset_match": false,
+      "current_build_case_outcome": "unverified_on_selected_assets"
+    },
+    {
+      "case": "C37",
+      "accepted_run": "docs/plan/consumer-harness-evidence/luna-native-6sldypob/run.json",
+      "accepted_run_sha256": "f56a168634c39038cd64e4a4ac7861e3f99c2d0704e6563f3156c4bb7cd64a9e",
+      "changed_assets": [
+        "P00",
+        "P05",
+        "P08",
+        "P09",
+        "P10",
+        "P12"
+      ],
+      "asset_match": false,
+      "current_build_case_outcome": "unverified_on_selected_assets"
+    },
+    {
+      "case": "C38",
+      "accepted_run": "docs/plan/consumer-harness-evidence/luna-native-ojhuus8y/run.json",
+      "accepted_run_sha256": "95729568b12b6a8a5ac7372c4e3c60c25e61e75f81c3c725055d75d92ab92b30",
+      "changed_assets": [
+        "P00",
+        "P05",
+        "P08",
+        "P09",
+        "P10",
+        "P12"
+      ],
+      "asset_match": false,
+      "current_build_case_outcome": "unverified_on_selected_assets"
+    },
+    {
+      "case": "C39",
+      "accepted_run": "docs/plan/consumer-harness-evidence/luna-native-ujcc_7gp/run.json",
+      "accepted_run_sha256": "cfdc0c3db08256e698016e01d88b6d08e790f0fddad4f1147567b1ad57306cb1",
+      "changed_assets": [
+        "P00",
+        "P05",
+        "P08",
+        "P09",
+        "P10",
+        "P12"
+      ],
+      "asset_match": false,
+      "current_build_case_outcome": "unverified_on_selected_assets"
+    },
+    {
+      "case": "C40",
+      "accepted_run": "docs/plan/consumer-harness-evidence/luna-native-ljokyikt/run.json",
+      "accepted_run_sha256": "61fd2bd517996b7de9eba86728fd691ac0867a43487a91b21d40cc750737575b",
+      "changed_assets": [
+        "P00",
+        "P05",
+        "P08",
+        "P09",
+        "P10",
+        "P12"
+      ],
+      "asset_match": false,
+      "current_build_case_outcome": "unverified_on_selected_assets"
+    },
+    {
+      "case": "C41",
+      "accepted_run": "docs/plan/consumer-harness-evidence/luna-native-r6qgj2zf/run.json",
+      "accepted_run_sha256": "051f214f05aff073d14b13afe4a3eadfc22672ff53c1f392afe68b6062bc427c",
+      "changed_assets": [
+        "P00",
+        "P05",
+        "P08",
+        "P09",
+        "P10",
+        "P12"
+      ],
+      "asset_match": false,
+      "current_build_case_outcome": "unverified_on_selected_assets"
+    },
+    {
+      "case": "C42",
+      "accepted_run": "docs/plan/consumer-harness-evidence/luna-native-ng9gh0jf/run.json",
+      "accepted_run_sha256": "c74d24f7703fc73ff8291c87e922a6f667c86c3fecc99df40e104f12f87a9dca",
+      "changed_assets": [
+        "P00",
+        "P05",
+        "P08",
+        "P09",
+        "P10",
+        "P12"
+      ],
+      "asset_match": false,
+      "current_build_case_outcome": "unverified_on_selected_assets"
+    },
+    {
+      "case": "C43",
+      "accepted_run": "docs/plan/consumer-harness-evidence/luna-native-58_nipiz/run.json",
+      "accepted_run_sha256": "25df4d6a2f249cb0786491f0df01fc756fff21a22dd06118f96302ed141f74b8",
+      "changed_assets": [
+        "P00",
+        "P05",
+        "P08",
+        "P09",
+        "P10",
+        "P12"
+      ],
+      "asset_match": false,
+      "current_build_case_outcome": "unverified_on_selected_assets"
+    },
+    {
+      "case": "C44",
+      "accepted_run": "docs/plan/consumer-harness-evidence/luna-native-pblegagy/run.json",
+      "accepted_run_sha256": "67bad6ff94bb4f58035b9e2e2e53dded1556c85f52dd9883595402ed13efda1e",
+      "changed_assets": [
+        "P09"
+      ],
+      "asset_match": false,
+      "current_build_case_outcome": "unverified_on_selected_assets"
+    },
+    {
+      "case": "C45",
+      "accepted_run": "docs/plan/consumer-harness-evidence/luna-native-9xhdhsmv/run.json",
+      "accepted_run_sha256": "a3755c6719211a260b420f7d2877ef316fddb838928753626d8229c0beb5aa64",
+      "changed_assets": [],
+      "asset_match": true,
+      "current_build_case_outcome": "historical_pass_same_assets"
+    },
+    {
+      "case": "C46",
+      "accepted_run": "docs/plan/consumer-harness-evidence/luna-native-0h7j6ujb/run.json",
+      "accepted_run_sha256": "121314704f4db6b085cd428b4f106fab8d8cf83cbc033751173ff12b609b7608",
+      "changed_assets": [],
+      "asset_match": true,
+      "current_build_case_outcome": "historical_pass_same_assets"
+    },
+    {
+      "case": "C47",
+      "accepted_run": "docs/plan/consumer-harness-evidence/luna-native-_go90ijd/run.json",
+      "accepted_run_sha256": "8b4180b4b013772ac4bdd56870307175848733ba308c9206544b5c66284cddcb",
+      "changed_assets": [
+        "P09"
+      ],
+      "asset_match": false,
+      "current_build_case_outcome": "unverified_on_selected_assets"
+    },
+    {
+      "case": "C48",
+      "accepted_run": "docs/plan/consumer-harness-evidence/luna-native-zxiulx0p/run.json",
+      "accepted_run_sha256": "c4261bcca808a51d4f736ccaa9d3c58f61fc62e8dad2f5c9e513ab18131020cf",
+      "changed_assets": [
+        "P09"
+      ],
+      "asset_match": false,
+      "current_build_case_outcome": "unverified_on_selected_assets"
+    },
+    {
+      "case": "C49",
+      "accepted_run": "docs/plan/consumer-harness-evidence/luna-native-svmildix/run.json",
+      "accepted_run_sha256": "93cdf54b2700644f299426e972cfb895694fc92dabb29ddcfab1f568a9bb697d",
+      "changed_assets": [
+        "P09"
+      ],
+      "asset_match": false,
+      "current_build_case_outcome": "unverified_on_selected_assets"
+    },
+    {
+      "case": "C50",
+      "accepted_run": "docs/plan/consumer-harness-evidence/luna-native-39dyktbd/run.json",
+      "accepted_run_sha256": "ff719f37ac1247816ec4272302ffc7ed4297dc01ee2e87706ac0efcf39b58652",
+      "changed_assets": [],
+      "asset_match": true,
+      "current_build_case_outcome": "historical_pass_same_assets"
+    }
+  ],
+  "limits": [
+    "Only exact asset matches preserve same-asset historical case evidence; changed guidance needs affected reassessment or a new case run.",
+    "Hashes identify workspace source bytes; they do not prove an installed host package or release approval.",
+    "The fifty accepted runs span six historical asset snapshots and remain historical evidence."
+  ]
+}
